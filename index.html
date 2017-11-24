@@ -1,47 +1,52 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-        <meta charset="UTF-8">
-        <title>Sign Up</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-        <link rel="stylesheet" href="css/style.css">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/main.css">
-        
-        <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-firestore.js"></script>
-        <script src="assets/init.js"></script>
-    </head>
-    <body>
-
-      <form action="index.html" method="post">
-      
-        <h1>Sign Up</h1>
-        
-        <fieldset>
-          <legend><span class="number">1</span>Your basic info</legend>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="user_name">
-          
-          <label for="mail">Email:</label>
-          <input type="email" id="mail" name="user_email">
-          
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="user_password">
-          
-          <label>Age:</label>
-          <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Under 13</label><br>
-          <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">13 or older</label>
-        </fieldset>
-        <fieldset>
-          <label for="country">Country:</label>
-          <input type="text" id="country" name="country_name">
-        </fieldset>
-        <button type="submit">Sign Up</button>
-      </form>
-      
-    </body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <div class="cointainer-fluid">
+            <div class="row">
+                <div class="col-xs-5" align="right">
+                    <h3>
+                        Enter name:
+                    </h3>
+                </div>
+                <div class="col-xs-7" align="left">
+                        <h3>
+                            <input type="text" placeholder="enter name" id="Name">
+                        </h3>
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col-xs-5" align="right">
+                        <h3>
+                            Enter Age:
+                        </h3>
+                    </div>
+                    <div class="col-xs-7" align="left">
+                            <h3>
+                                <input type="text" placeholder="enter age" id="age">
+                            </h3>
+                        </div>
+                </div>
+            <div class="row">
+                <div class="col-md-12" align="center">
+                    <h3>
+                        <button class="btn-primary" id="submit">Save</button>
+                    </h3>
+            </div>
+        </div>
+    </div>
+    <!--Keep js here-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-firestore.js"></script>
+    <script src="assets/init.js"></script>
+    <script src="assets/app.js"></script>
+</body>
 </html>
