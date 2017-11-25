@@ -1,2 +1,4 @@
 # fire-form
-form working on firebase
+It is a bootstrap form.
+only have two input boxes which interacts with firebase.
+and store all data.
